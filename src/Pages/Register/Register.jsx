@@ -1,7 +1,41 @@
 import { Link } from "react-router-dom";
 import SocialLogin from "../Login/SocialLogin";
+import useAuth from "../../Hooks/useAuth";
+import { useState } from "react";
 
 const Register = () => {
+
+    const {createUser} = useAuth;
+    const [regError, setRegError] = useState('');
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        //get input fieeld values
+        const name = e.target.name.value;
+        const photo = e.target.photo.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        // console.log(email, name, password, photo);
+
+        //reset error
+        setRegError('');
+
+        //password validation
+        if(password.length < 6){
+            setRegError('Password should be at least 6 characters.');
+            return;
+        }else if(!/[A-Z]/.test(password)){
+            setRegError('Password should have at least one upper case character.');
+            return;
+        }else if(!/[!@#$%^&*()_+{}\\[\]:;<>,.?~\\|]/.test(password)){
+            setRegError('Password should have one special character.');
+            return;
+        }
+        
+
+    }
+
+
   return (
     <div>
       <div>
@@ -9,7 +43,7 @@ const Register = () => {
           Please Register
         </h2>
         <div className="w-[500px] mx-auto h-[570px] bg-white shadow-2xl rounded-lg mb-9 p-8">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Name</span>
@@ -58,6 +92,9 @@ const Register = () => {
                 required
               />
             </div>
+            {
+                regError && <p className="text-red-700">{regError}</p>
+            }
             <div className="form-control mt-6">
               <button className="btn btn-primary  font-bold">Register</button>
             </div>
