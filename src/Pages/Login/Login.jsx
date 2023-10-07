@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
+import SocialLogin from "./SocialLogin";
 
 const Login = () => {
   return (
     <div>
       <div>
-        <h2 className="text-5xl my-10 text-center font-bold text-blue-800">Please Login</h2>
+        <h2 className="text-5xl my-10 text-center font-bold text-blue-800">
+          Please Login
+        </h2>
         <div className="w-[500px] mx-auto h-[400px] bg-white shadow-2xl rounded-lg mb-9 p-8">
-          <form >
+          <form>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -36,8 +39,12 @@ const Login = () => {
             </div>
           </form>
           <p className="text-center mt-4">
-          Do not have an account? <Link className="text-blue-600 font-bold" to="/register">Register</Link>
-        </p>
+            Do not have an account?{" "}
+            <Link className="text-blue-600 font-bold" to="/register">
+              Register
+            </Link>
+          </p>
+          <SocialLogin></SocialLogin>
         </div>
       </div>
     </div>

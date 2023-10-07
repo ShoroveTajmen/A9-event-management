@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SocialLogin from "../Login/SocialLogin";
 
 const Register = () => {
   return (
@@ -7,7 +8,7 @@ const Register = () => {
         <h2 className="text-5xl my-10 text-center font-bold text-blue-800">
           Please Register
         </h2>
-        <div className="w-[500px] mx-auto h-[530px] bg-white shadow-2xl rounded-lg mb-9 p-8">
+        <div className="w-[500px] mx-auto h-[570px] bg-white shadow-2xl rounded-lg mb-9 p-8">
           <form>
             <div className="form-control">
               <label className="label">
@@ -67,6 +68,7 @@ const Register = () => {
               Login
             </Link>
           </p>
+          <SocialLogin></SocialLogin>
         </div>
       </div>
     </div>
