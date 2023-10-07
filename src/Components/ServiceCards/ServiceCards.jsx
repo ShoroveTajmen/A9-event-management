@@ -1,7 +1,8 @@
 import { RiMoneyDollarBoxFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
-const ServiceCard = ({ data }) => {
+const ServiceCards = ({ data }) => {
   //destructure the data object
   const { ServiceID, ServiceName, Image, Price, Description } = data || {};
   return (
@@ -18,12 +19,16 @@ const ServiceCard = ({ data }) => {
             {Price}
           </h2>
         </div>
-       
-          <button className="btn btn-outline btn-primary rounded-3xl w-[300px] mx-auto mt-3 font-bold">Service Detail</button>
-  
+
+        <Link to={`/serviceCard/${ServiceID}`}>
+          {" "}
+          <button className="btn btn-outline btn-primary rounded-3xl w-[300px] mx-auto mt-3 font-bold ml-[40px]">
+            Service Detail
+          </button>
+        </Link>
       </div>
     </div>
   );
 };
 
-export default ServiceCard;
+export default ServiceCards;

@@ -3,6 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
+import ServiceCard from "../Pages/ServiceCard/ServiceCard";
 
 
 const myCreateRoute = createBrowserRouter([
@@ -19,6 +20,11 @@ const myCreateRoute = createBrowserRouter([
             {
                 path: '/about',
                 element: <About></About>
+            },
+            {
+                path: '/serviceCard/:ServiceID',
+                element: <ServiceCard></ServiceCard>,
+                loader: ()=> fetch('/data.json')
             }
         ]
     }
