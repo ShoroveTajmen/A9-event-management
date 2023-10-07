@@ -36,6 +36,20 @@ const Navbar = () => {
                 About
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/login"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-[#4447ff] underline"
+                  : ""
+              }
+            >
+                <button className="btn btn-primary">LOGIN</button>
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </div>

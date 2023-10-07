@@ -4,6 +4,8 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import ServiceCard from "../Pages/ServiceCard/ServiceCard";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
 
 
 const myCreateRoute = createBrowserRouter([
@@ -25,6 +27,14 @@ const myCreateRoute = createBrowserRouter([
                 path: '/serviceCard/:ServiceID',
                 element: <ServiceCard></ServiceCard>,
                 loader: ()=> fetch('/data.json')
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             }
         ]
     }
