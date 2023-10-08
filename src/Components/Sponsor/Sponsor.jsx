@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import Faq from "../FAQ/Faq";
 import SponsorImg from "./SponsorImg";
 
 const Sponsor = ({data}) => {
@@ -19,6 +20,7 @@ const Sponsor = ({data}) => {
                 data?.map(data => <SponsorImg key={data.ServiceID} data={data}></SponsorImg>)
             }
         </div>
+        <Faq></Faq>
     </div>
   );
 };
