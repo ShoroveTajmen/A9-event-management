@@ -26,9 +26,9 @@ const Navbar = () => {
               Home
             </NavLink>
           </li>
-          <li>
+          <li className="w-[170px] mx-auto">
             <NavLink
-              to="/about"
+              to="/ticket"
               className={({ isActive, isPending }) =>
                 isPending
                   ? "pending"
@@ -37,12 +37,12 @@ const Navbar = () => {
                   : ""
               }
             >
-              About
+              Buy Ticket
             </NavLink>
           </li>
-          {/* <li>
+          <li>
             <NavLink
-              to="/login"
+              to="/speakers"
               className={({ isActive, isPending }) =>
                 isPending
                   ? "pending"
@@ -51,9 +51,10 @@ const Navbar = () => {
                   : ""
               }
             >
-                <button className="btn btn-primary">LOGIN</button>
+              Speakers
             </NavLink>
-          </li> */}
+          </li>
+ 
           {/* avatar part  */}
           <div className="navbar-end">
             {user?.email ? (

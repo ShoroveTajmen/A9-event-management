@@ -2,11 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
-import About from "../Pages/About/About";
 import ServiceCard from "../Pages/ServiceCard/ServiceCard";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import BuyTicket from "../Pages/BuyTicket/BuyTicket";
+import Speakers from "../Pages/Speakers/Speakers";
 
 const myCreateRoute = createBrowserRouter([
   {
@@ -20,8 +21,12 @@ const myCreateRoute = createBrowserRouter([
         loader: () => fetch("/data.json"),
       },
       {
-        path: "/about",
-        element: <About></About>,
+        path: "/ticket",
+        element: <BuyTicket></BuyTicket>,
+      },
+      {
+        path: '/speakers',
+        element: <Speakers></Speakers>
       },
       {
         path: "/serviceCard/:ServiceID",

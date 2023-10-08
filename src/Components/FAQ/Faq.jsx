@@ -27,7 +27,7 @@ const Faq = () => {
             Do I need to bring a laptop?
             </div>
             <div className="collapse-content">
-              <p>Whether you need to bring a laptop to a tech conference depends on your preferences and goals. It can be beneficial for taking notes, accessing digital materials, and networking, but it's not always mandatory.</p>
+              <p>Whether you need to bring a laptop to a tech conference depends on your preferences and goals. It can be beneficial for taking notes, accessing digital materials, and networking, but its not always mandatory.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow join-item border border-base-300">
