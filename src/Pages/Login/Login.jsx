@@ -1,7 +1,49 @@
 import { Link } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 const Login = () => {
+  const { signIn } = useContext(AuthContext);
+  const [regError, setRegError] = useState("");
+  // eslint-disable-next-line no-unused-vars
+  const [success, setSuccess] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    //get input fieeld values
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    // console.log(email, name, password, photo);
+
+    //reset error
+    setRegError("");
+    setSuccess('');
+
+    //password validation
+    if (password.length < 6) {
+      setRegError("Password should be at least 6 characters.");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      setRegError("Password should have at least one upper case character.");
+      return;
+    } else if (!/[!@#$%^&*()_+{}\\[\]:;<>,.?~\\|]/.test(password)) {
+      setRegError("Password should have one special character.");
+      return;
+    }
+
+    //create a new user
+    signIn(email, password)
+      .then((res) => {
+        console.log(res.user);
+        setSuccess(toast.success("Login Successful"));
+      })
+      .catch((error) => {
+        toast.error(error.message) 
+      });
+  };
+
   return (
     <div>
       <div>
@@ -9,7 +51,7 @@ const Login = () => {
           Please Login
         </h2>
         <div className="w-[500px] mx-auto h-[400px] bg-white shadow-2xl rounded-lg mb-9 p-8">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -34,8 +76,11 @@ const Login = () => {
                 required
               />
             </div>
+            {regError && <p className="text-red-700">{regError}</p>}
             <div className="form-control mt-6">
-              <button className="btn btn-primary  font-bold">Login</button>
+              <button type="submit" className="btn btn-primary  font-bold">
+                Login
+              </button>
             </div>
           </form>
           <p className="text-center mt-4">

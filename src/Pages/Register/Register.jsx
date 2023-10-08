@@ -1,40 +1,52 @@
 import { Link } from "react-router-dom";
 import SocialLogin from "../Login/SocialLogin";
-import useAuth from "../../Hooks/useAuth";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 const Register = () => {
+  const { createUser } = useContext(AuthContext);
+  const [regError, setRegError] = useState("");
+  // eslint-disable-next-line no-unused-vars
+  const [success, setSuccess] = useState("");
 
-    const {createUser} = useAuth;
-    const [regError, setRegError] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    //get input fieeld values
+    // eslint-disable-next-line no-unused-vars
+    const name = e.target.name.value;
+    // eslint-disable-next-line no-unused-vars
+    const photo = e.target.photo.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    // console.log(email, name, password, photo);
 
-    const handleSubmit = e => {
-        e.preventDefault();
-        //get input fieeld values
-        const name = e.target.name.value;
-        const photo = e.target.photo.value;
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-        // console.log(email, name, password, photo);
+    //reset error
+    setRegError("");
+    setSuccess("");
 
-        //reset error
-        setRegError('');
-
-        //password validation
-        if(password.length < 6){
-            setRegError('Password should be at least 6 characters.');
-            return;
-        }else if(!/[A-Z]/.test(password)){
-            setRegError('Password should have at least one upper case character.');
-            return;
-        }else if(!/[!@#$%^&*()_+{}\\[\]:;<>,.?~\\|]/.test(password)){
-            setRegError('Password should have one special character.');
-            return;
-        }
-        
-
+    //password validation
+    if (password.length < 6) {
+      setRegError("Password should be at least 6 characters.");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      setRegError("Password should have at least one upper case character.");
+      return;
+    } else if (!/[!@#$%^&*()_+{}\\[\]:;<>,.?~\\|]/.test(password)) {
+      setRegError("Password should have one special character.");
+      return;
     }
 
+    //create a new user
+    createUser(email, password)
+      .then((res) => {
+        console.log(res.user);
+        setSuccess(toast.success("Registration Successful"));
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
     <div>
@@ -92,13 +104,13 @@ const Register = () => {
                 required
               />
             </div>
-            {
-                regError && <p className="text-red-700">{regError}</p>
-            }
+            {regError && <p className="text-red-700">{regError}</p>}
             <div className="form-control mt-6">
               <button className="btn btn-primary  font-bold">Register</button>
             </div>
           </form>
+
+        
           <p className="text-center mt-4">
             Already have an account?{" "}
             <Link className="text-blue-600 font-bold" to="/login">
