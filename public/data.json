@@ -1,0 +1,56 @@
+[
+  {
+    "ServiceID": "1",
+    "ServiceName": "Consumer Electronics Show",
+    "venuePic": "https://i.ibb.co/N1Hc2h9/v1.jpg",
+    "Image": "https://i.ibb.co/jw0bktf/ces.jpg",
+    "Price": "$299",
+    "sponsor": "https://i.ibb.co/kJTn2Yt/cocat.png",
+    "Description": "CES (Consumer Electronics Show) is the world's largest tech expo, showcasing cutting-edge innovations and gadgets from the electronics industry."
+  },
+  {
+    "ServiceID": "2",
+    "ServiceName": "Web Summit",
+    "venuePic": "https://i.ibb.co/34TQV4n/v2.jpg",
+    "Image": "https://i.ibb.co/P9BBjhB/web-Summit.jpg",
+    "Price": "$249",
+    "sponsor": "https://i.ibb.co/Y0dGxnT/fbb.jpg",
+    "Description": "Web Summit is a premier global tech conference uniting industry leaders and innovators to explore the future of technology and its impact on society."
+  },
+  {
+    "ServiceID": "3",
+    "ServiceName": "Electronic Entertainment Expo",
+    "venuePic": "https://i.ibb.co/JKhXQVg/v3.jpg",
+    "Image": "https://i.ibb.co/Y3w3Qcq/e3.jpg",
+    "Price": "$220",
+    "sponsor": "https://i.ibb.co/ZL50dfn/football.jpg",
+    "Description": "E3 is the ultimate showcase of the gaming industry, featuring the latest video games, hardware, and major announcements from leading game developers and publishers."
+  },
+  {
+    "ServiceID": "4",
+    "ServiceName": "BDGame Show",
+    "venuePic": "https://i.ibb.co/JFJ0vzg/v4.jpg",
+    "Image": "https://i.ibb.co/1RR39cD/game.jpg",
+    "Price": "$199",
+    "sponsor": "https://i.ibb.co/Y2zybMq/insta.png",
+    "Description": "A game show is a competitive and entertaining television program where contestants participate in various challenges, puzzles, and quizzes to win prizes or cash."
+  },
+  {
+    "ServiceID": "5",
+    "ServiceName": "Facebook Hackathon",
+    "venuePic": "https://i.ibb.co/qmLWpdk/v5.jpg",
+    "Image": "https://i.ibb.co/6F6LK51/fb.jpg",
+    "Price": "$349",
+    "sponsor": "https://i.ibb.co/58Tzsmw/snap.png",
+    "Description": "Facebook Hackathon is an exciting coding event where developers come together to create innovative projects and solutions using Facebook technologies."
+  },
+  {
+    "ServiceID": "6",
+    "ServiceName": "CodeDay",
+    "venuePic": "https://i.ibb.co/4YW6SjQ/v6.jpg",
+    "Image": "https://i.ibb.co/XysStHg/code.jpg",
+    "Price": "$279",
+    "sponsor": "https://i.ibb.co/8Nq0d5S/twitter.jpg",
+    "Description": "CodeDay is a coding and programming event where young enthusiasts gather for intensive coding sessions, workshops, and creative tech projects."
+  }
+]
