@@ -22,11 +22,19 @@ const myCreateRoute = createBrowserRouter([
       },
       {
         path: "/ticket",
-        element: <BuyTicket></BuyTicket>,
+        element: (
+          <PrivateRoute>
+            <BuyTicket></BuyTicket>
+          </PrivateRoute>
+        ),
       },
       {
-        path: '/speakers',
-        element: <Speakers></Speakers>
+        path: "/speakers",
+        element: (
+          <PrivateRoute>
+            <Speakers></Speakers>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/serviceCard/:ServiceID",

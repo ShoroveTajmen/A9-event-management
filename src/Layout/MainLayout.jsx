@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 
 
 const MainLayout = () => {
+
     return (
         <div  className="max-w-[1600px] mx-auto">
             <Navbar></Navbar>
