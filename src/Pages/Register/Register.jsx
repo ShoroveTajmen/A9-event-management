@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "../Login/SocialLogin";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import toast from "react-hot-toast";
 
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, handleUpdateProfile } = useContext(AuthContext);
+  const navigate = useNavigate();
   const [regError, setRegError] = useState("");
   // eslint-disable-next-line no-unused-vars
   const [success, setSuccess] = useState("");
@@ -40,11 +41,16 @@ const Register = () => {
     //create a new user
     createUser(email, password)
       .then((res) => {
-        console.log(res.user);
-        setSuccess(toast.success("Registration Successful"));
+        console.log(res)
+        handleUpdateProfile(name, photo)
+        .then(() => {
+          toast.success('Registration SucessFully')
+          navigate('/')
+        })
       })
       .catch((error) => {
         console.log(error);
+        toast.error(error.message)
       });
   };
 

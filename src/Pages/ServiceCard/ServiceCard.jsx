@@ -7,17 +7,17 @@ const ServiceCard = () => {
     const [serviceCard, setServiceCard] = useState({});
     //get the specific service card when i click on the service detail button
     const {ServiceID} = useParams();
-    console.log(ServiceID);
+    // console.log(ServiceID);
     //get the service card details
     const cards = useLoaderData();
-    console.log(cards);
+    // console.log(cards);
 
 
     useEffect(()=>{
         const getCard = cards?.find(card => card.ServiceID === ServiceID);
         setServiceCard(getCard);
     },[ServiceID, cards])
-    console.log(serviceCard);
+    // console.log(serviceCard);
 
 
     return (

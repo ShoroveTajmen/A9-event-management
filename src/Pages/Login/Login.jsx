@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
+  const navigate = useNavigate();
   const [regError, setRegError] = useState("");
   // eslint-disable-next-line no-unused-vars
   const [success, setSuccess] = useState("");
@@ -38,6 +39,7 @@ const Login = () => {
       .then((res) => {
         console.log(res.user);
         setSuccess(toast.success("Login Successful"));
+        navigate('/')
       })
       .catch((error) => {
         toast.error(error.message) 

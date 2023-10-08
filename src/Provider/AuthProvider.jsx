@@ -7,6 +7,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import { auth } from "../firebaseConfig/firebase.config";
 
@@ -16,22 +17,34 @@ const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
     const[user, setUser] = useState({});
+    const[loading, setLoading] = useState(true);
 
 
   //log in by google
   const googleLogin = () => {
+    setLoading(true)
     return signInWithPopup(auth, googleProvider);
   };
 
   //creatiing a user or sign up
   const createUser = (email, password) => {
+    setLoading(true)
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
   //sign in a user
   const signIn = (email, password) => {
+    setLoading(true)
     return signInWithEmailAndPassword(auth, email, password);
   };
+
+
+  //update profile
+  const handleUpdateProfile = (name, photo) => {
+    return updateProfile(auth.currentUser, {
+        displayName: name, photoURL: photo
+      })
+  }
 
   //sign out a user
   const logOut = () => {
@@ -41,7 +54,8 @@ const AuthProvider = ({ children }) => {
   //onauthstateChanged or observer
  useEffect(()=>{
     onAuthStateChanged(auth, user => {
-        setUser(user)
+        setUser(user);
+        setLoading(false);
     });
  },[])
  console.log(user)
@@ -52,6 +66,8 @@ const AuthProvider = ({ children }) => {
     signIn,
     logOut,
     user,
+    loading,
+    handleUpdateProfile,
   };
 
   return (

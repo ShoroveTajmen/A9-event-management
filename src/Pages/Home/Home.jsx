@@ -10,6 +10,9 @@ const Home = () => {
         <div className="">
             
             <Banner></Banner>
+            <div className="flex justify-center items-center mt-[100px]">
+                <h1 className="text-blue-700 font-bold text-5xl">Our Services</h1>
+            </div>
             <AllData data={data}></AllData>
         </div>
     );

@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
 
 const ServiceDetails = ({ serviceCard }) => {
-  console.log(serviceCard);
+  // console.log(serviceCard);
   const { ServiceID, ServiceName, Image, Price, Description } =
     serviceCard || {};
 
