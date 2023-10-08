@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav className="flex flex-col md:flex-row md:justify-between md:items-center py-3 md:py-2  md:px-5 ml-[80px] md:ml-0 shadow-xl rounded-lg  ">
         <Logo></Logo>
 
-        <ul className="flex gap-10 font-bold text-lg">
+        <ul className="flex gap-5 font-bold text-lg justify-center items-center">
           <li>
             <NavLink
               to="/"
@@ -26,7 +26,7 @@ const Navbar = () => {
               Home
             </NavLink>
           </li>
-          <li className="w-[170px] mx-auto">
+          <li className="">
             <NavLink
               to="/ticket"
               className={({ isActive, isPending }) =>
@@ -37,7 +37,7 @@ const Navbar = () => {
                   : ""
               }
             >
-              Buy Ticket
+              Ticket
             </NavLink>
           </li>
           <li>
@@ -54,19 +54,23 @@ const Navbar = () => {
               Speakers
             </NavLink>
           </li>
- 
-          {/* avatar part  */}
+
+          <li>
+            <Link to='/register'>
+              <button className="btn btn-sm  btn-primary font-bold">Register</button>
+            </Link>
+          </li>
+
+          {/* profile pic, username, log out button  */}
           <div className="navbar-end">
             {user?.email ? (
-              <div className="dropdown dropdown-end">
-                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <div className="flex gap-4 justify-center items-center">
                   <div className="w-10 rounded-full">
-                    <img src={user.photoURL} alt={user.displayName} />
+                    <img className="rounded-full" src={user.photoURL} alt={user.displayName} />
                   </div>
-                </label>
                 <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box "
                 >
                   <li>
                     <button className="btn btn-sm  btn-ghost">
@@ -74,7 +78,10 @@ const Navbar = () => {
                     </button>
                   </li>
                   <li>
-                    <button className="btn btn-sm  btn-primary" onClick={logOut}>
+                    <button
+                      className="btn btn-sm btn-primary font-bold"
+                      onClick={logOut}
+                    >
                       Logout
                     </button>
                   </li>
@@ -82,7 +89,7 @@ const Navbar = () => {
               </div>
             ) : (
               <Link to="/login">
-                <button className="btn btn-sm  btn-primary">Login</button>
+                <button className="btn btn-sm btn-primary font-bold">Login</button>
               </Link>
             )}
           </div>

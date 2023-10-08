@@ -58,6 +58,9 @@ const BuyTicket = () => {
           </p>
         </div>
       </div>
+      <div className="ml-[700px] mt-5">
+        <button className="btn btn-primary font-bold">GET TICKET NOW!</button>
+      </div>
     </div>
   );
 };
