@@ -49,10 +49,10 @@ const Login = () => {
   return (
     <div>
       <div>
-        <h2 className="text-5xl my-10 text-center font-bold text-blue-800">
+        <h2 className="text-5xl my-10 text-center font-bold text-blue-800 mt-[50px]">
           Please Login
         </h2>
-        <div className="w-[500px] mx-auto h-[400px] bg-white shadow-2xl rounded-lg mb-9 p-8">
+        <div className="md:w-[500px] mx-auto h-[400px] bg-white shadow-2xl rounded-lg mb-9 p-8">
           <form onSubmit={handleSubmit}>
             <div className="form-control">
               <label className="label">
