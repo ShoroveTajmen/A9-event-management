@@ -1,11 +1,12 @@
 - Website Name --> Tech and Gaming Events 2023.
-- Live Site Link --> second-sleep.surge.sh
+- Live Site Link --> [Link Text](second-sleep.surge.sh)
+
 
 
 - In below I will list out the 5 Project features ::-
 
   - OverView Of Homepage ->
-This website is built on an event management project for technology and gaming. There is a navigation bar, a banner section, a sponsors area, a FAQs part, and a footer section in this project. This website offers a variety of event services. Dynamic routing and two private routes that require sign-in are available in the navigation area. The user name, profile picture, and logout button are displayed in the right side of the navigation bar whenever we sign in to the website.
+This website is built on an event management project for technology and gaming. There is a navigation bar, a banner section, a sponsors area, a FAQs part, and a footer section in this project. This website offers a variety of event services. Dynamic routing and two private routes that require sign-in are available in the navigation area. The user name, profile picture, and logout button are displayed in the right side of the navigation bar whenever we sign in to the website. If we click on the Get Ticket button then button will be redirect to the ticket page.
    
 
   - Service Section Details -> 

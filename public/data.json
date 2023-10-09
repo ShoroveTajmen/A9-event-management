@@ -19,7 +19,7 @@
   },
   {
     "ServiceID": "3",
-    "ServiceName": "Electronic Entertainment Expo",
+    "ServiceName": "E3 Expo",
     "venuePic": "https://i.ibb.co/JKhXQVg/v3.jpg",
     "Image": "https://i.ibb.co/Y3w3Qcq/e3.jpg",
     "Price": "$220",
@@ -38,7 +38,7 @@
   {
     "ServiceID": "5",
     "ServiceName": "Facebook Hackathon",
-    "venuePic": "https://i.ibb.co/qmLWpdk/v5.jpg",
+    "venuePic": "https://i.ibb.co/HrJsZMX/e55.webp",
     "Image": "https://i.ibb.co/6F6LK51/fb.jpg",
     "Price": "$349",
     "sponsor": "https://i.ibb.co/58Tzsmw/snap.png",
@@ -47,7 +47,7 @@
   {
     "ServiceID": "6",
     "ServiceName": "CodeDay",
-    "venuePic": "https://i.ibb.co/4YW6SjQ/v6.jpg",
+    "venuePic": "https://i.ibb.co/s3WSs1q/e66.jpg",
     "Image": "https://i.ibb.co/XysStHg/code.jpg",
     "Price": "$279",
     "sponsor": "https://i.ibb.co/8Nq0d5S/twitter.jpg",
