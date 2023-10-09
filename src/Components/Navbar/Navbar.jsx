@@ -76,7 +76,7 @@ const Navbar = () => {
                 <div className="flex gap-4 justify-center items-center w-[300px] ml-[50px] md:ml-0">
                   <div className=" rounded-full">
                     <img
-                      className="rounded-full"
+                      className="rounded-full w-[90px] h-[50px]"
                       src={user.photoURL}
                       alt={user.displayName}
                     />
