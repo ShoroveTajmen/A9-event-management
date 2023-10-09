@@ -18,10 +18,10 @@ const BuyTicket = () => {
 
       <div>
         <div className="flex justify-center items-center mt-16 p-5">
-          <h1 className="text-5xl font-bold text-blue-700">Get The Ticket</h1>
+          <h1 className="text-5xl font-bold text-white">Get The Ticket</h1>
         </div>
         <div className="flex justify-center items-center mt-5">
-          <hr className="w-[200px]  border-4 rounded" />
+          <hr className="w-[200px]  border-4 border-blue-700 rounded" />
         </div>
       </div>
 
@@ -31,7 +31,7 @@ const BuyTicket = () => {
             <FaWpforms className="w-[50px] h-[50px] text-blue-500 ml-[120px] md:ml-[90px] lg:ml-[110px]"></FaWpforms>
           </h1>
           <h1 className="text-2xl font-bold mt-5 mb-3">Submit The Form</h1>
-          <p>
+          <p className="text-gray-300">
             To complete the form submission, press the Submit button provided,
             typically found at the end of the form. Verify the information for
             accuracy before submitting.
@@ -42,7 +42,7 @@ const BuyTicket = () => {
             <RiTicket2Fill className="w-[50px] h-[50px] text-blue-500 ml-[125px] md:ml-[90px] lg:ml-[110px]"></RiTicket2Fill>
           </h1>
           <h1 className="text-2xl font-bold mt-5 mb-3">Payment</h1>
-          <p>
+          <p className="text-gray-300">
           Visit our websites payment page, choose your preferred payment method, provide payment details, including the amount, and confirm to complete the transaction.
           </p>
         </div>
@@ -51,13 +51,13 @@ const BuyTicket = () => {
             <RiTicket2Line className="w-[50px] h-[50px] text-blue-500 ml-[120px] md:ml-[90px] lg:ml-[110px]"></RiTicket2Line>
           </h1>
           <h1 className="text-2xl font-bold mt-5 mb-3">Get Your Ticket</h1>
-          <p>
+          <p className="text-gray-300">
           To get your ticket, visit our event website and click on the Buy Tickets button. Follow the prompts to select your ticket type, provide necessary information, and complete the payment process.
           </p>
         </div>
       </div>
       <div className="ml-[135px] md:ml-[300px] lg:ml-[700px] mt-5 ">
-        <button className="btn btn-primary font-bold">GET TICKET NOW!</button>
+        <button className="btn bg-blue-700 text-white font-bold">GET TICKET NOW!</button>
       </div>
     </div>
   );

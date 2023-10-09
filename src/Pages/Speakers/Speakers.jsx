@@ -20,12 +20,12 @@ const Speakers = () => {
           <h1 className="text-white font-bold flex justify-center items-center text-xl">
             Our Speakers
           </h1>
-          <h1 className="flex justify-center items-center text-5xl font-bold text-blue-700  text-center">
+          <h1 className="flex justify-center items-center text-5xl font-bold text-white mt-3  text-center">
             Get to Know Distinguished Speakers
           </h1>
         </div>
         <div className="flex justify-center items-center mt-5">
-          <hr className="w-[200px]  border-4 rounded" />
+          <hr className="w-[200px]  border-4 border-blue-700 rounded" />
         </div>
       </div>
 
@@ -35,7 +35,7 @@ const Speakers = () => {
           <div className="text-center  my-4">
             <h1 className="text-2xl font-bold">Jane Smith</h1>
             <h1 className="mt-3 mb-3">Chief Technology Officer</h1>
-            <div className="flex gap-3 md:ml-[100px] ml-[170px] mb-[70px] md:mb-0">
+            <div className="flex gap-3 md:ml-[100px] ml-[170px] mb-[70px] md:mb-0 text-blue-700">
               {" "}
               <h1>
                 <FaFacebook></FaFacebook>
@@ -54,7 +54,7 @@ const Speakers = () => {
           <div className="text-center  my-4">
             <h1 className="text-2xl font-bold">Emily Johnson</h1>
             <h1 className="mt-3 mb-3">Gaming Analyst and Consultant</h1>
-            <div className="flex gap-3 md:ml-[100px] ml-[170px] mb-[70px] md:mb-0">
+            <div className="flex gap-3 md:ml-[100px] ml-[170px] mb-[70px] md:mb-0 text-blue-700">
               {" "}
               <h1>
                 <FaFacebook></FaFacebook>
@@ -73,7 +73,7 @@ const Speakers = () => {
           <div className="text-center  my-4">
             <h1 className="text-2xl font-bold">Jane Smith</h1>
             <h1 className="mt-3 mb-3">Chief Technology Officer (CTO)</h1>
-            <div className="flex gap-3 md:ml-[100px] ml-[170px] mb-[70px] md:mb-0">
+            <div className="flex gap-3 md:ml-[100px] ml-[170px] mb-[70px] md:mb-0 text-blue-700">
               {" "}
               <h1>
                 <FaFacebook></FaFacebook>

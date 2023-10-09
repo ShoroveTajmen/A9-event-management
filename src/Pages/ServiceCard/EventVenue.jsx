@@ -11,10 +11,10 @@ const EventVenue = ({ serviceCard }) => {
                 <img className="w-[350px] h-[350px] md:w-[550px] md:h-[550px] rounded-3xl mt-12  lg:mt-0" src={venuePic} alt="" />
             </div>
             <div className="w-[400px] md:w-[500px] text-white md:text-left text-center">
-                <hr className="w-[180px]  border-4 rounded md:ml-0 ml-[110px]" />
+                <hr className="w-[180px]  border-4 border-blue-700 rounded md:ml-0 ml-[110px]" />
                 <h1 className="text-xl font-bold mt-5 mb-3">Conference Hall</h1>
                 <h1 className="text-5xl font-bold mb-4">{ServiceName}</h1>
-                <p className="text-lg font-semibold text-gray-300">{Description}</p>
+                <p className="text-lg font-semibold text-gray-400">{Description}</p>
             </div>
         </div>
     );
