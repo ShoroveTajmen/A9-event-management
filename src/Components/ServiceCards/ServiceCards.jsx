@@ -6,7 +6,7 @@ const ServiceCards = ({ data }) => {
   //destructure the data object
   const { ServiceID, ServiceName, Image, Price, Description } = data || {};
   return (
-    <div className=" my-[20px]">
+    <div className=" my-[20px] ml-7 md:ml-0">
       <div className="card w-96 h-[550px] bg-base-100 shadow-xl shadow-indigo-500/50">
         <figure>
           <img className="w-full h-[230px]" src={Image} alt="Shoes" />

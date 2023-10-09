@@ -10,18 +10,18 @@ const Banner = () => {
     <div>
       <div className="relative w-full h-[700px]">
         {/* background image */}
-        <div className="absolute top-0 right-0 bottom-0 left-0 bg-[url('https://i.ibb.co/Qk6nj8H/tech-bg.jpg')] bg-cover bg-center bg-no-repeat h-[700px] "></div>
+        <div className="absolute top-0 right-0 bottom-0 left-0 bg-[url('https://i.ibb.co/Qk6nj8H/tech-bg.jpg')] bg-cover bg-center bg-no-repeat h-[750px] md:h-[700px]"></div>
         {/* white overlay */}
-        <div className="absolute top-0 right-[300px] bottom-0 left-0 bg-white opacity-20 "></div>
+        <div className="absolute top-0 right-0 md:right-[300px] bottom-0 left-0 bg-black opacity-40 "></div>
         <div className="relative ml-[19px] md:ml-[160px] lg:ml-[40px]" data-aos = "zoom-in">
-          <div className="absolute mt-[220px]  md:mt-[170px]" >
+          <div className="absolute mt-[180px]  md:mt-[170px] " >
             <h1 className=" text-white text-2xl md:text-3xl lg:text-2xl font-semibold mb-[10px] md:mb-[10px]" >
               Tech and Gaming Events 2023
             </h1>{" "}
-            <h1 className=" text-white text-2xl md:text-3xl lg:text-7xl font-bold mb-[10px] md:mb-[20px]">
+            <h1 className=" text-white text-5xl md:text-3xl lg:text-7xl font-bold mb-[10px] md:mb-[20px]">
               Elevating the Worldwide <br /> Tech Landscape
             </h1>
-            <p className=" text-white text-2xl md:text-3xl lg:text-sm font-semibold mb-[10px] md:mb-[20px]">
+            <p className=" text-gray-300 text-sm md:text-3xl lg:text-lg font-semibold mb-[10px] md:mb-[20px]">
               Tech conferences gather tech professionals to share insights and
               innovations, fostering industry <br /> knowledge and
               collaboration. Tech expos showcase the latest products and

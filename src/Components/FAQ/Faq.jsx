@@ -3,14 +3,14 @@ const Faq = () => {
     <div className="p-5">
       <div className=" mt-16 p-5">
         <h1 className="text-white flex justify-center items-center font-bold">FAQs</h1>
-        <h1 className="text-5xl font-bold text-blue-700 flex justify-center items-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-blue-700 flex justify-center items-center text-center">
           Frequently asked questions
         </h1>
         <div className="flex justify-center items-center mt-5 mb-12">
           <hr className="w-[280px]  border-4 rounded" />
         </div>
       </div>
-      <div className="text-white w-[900px] mx-auto">
+      <div className="text-white w-[350px] md:w-[900px] mx-auto">
         <div className="join join-vertical w-full">
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" checked="checked" />

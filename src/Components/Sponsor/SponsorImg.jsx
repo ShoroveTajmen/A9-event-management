@@ -5,7 +5,7 @@
 const SponsorImg = ({data}) => {
     const { ServiceID, sponsor } = data || {};
     return (
-        <div className="ml-[50px] mb-10">
+        <div className="ml-[70px] md:ml-[50px] mb-10">
             <img className="w-[200px] h-[100px] rounded-2xl" src={sponsor} alt="" />
         </div>
     );
