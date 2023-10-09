@@ -8,10 +8,10 @@ const Speakers = () => {
         {/* white overlay */}
         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black opacity-60 "></div>
         <div className="relative">
-          <h1 className="absolute text-white md:top-[200px] top-[180px] md:left-[550px] font-bold md:text-5xl text-4xl ml-2 md:ml-0 text-center">
+          <h1 className="absolute text-white md:top-[200px] top-[180px] md:left-[150px] lg:left-[550px] font-bold md:text-4xl lg:text-5xl text-4xl ml-2 md:ml-0 text-center">
             OUR HONORABLE SPEAKERS
           </h1>
-          <h1 className="text-white absolute top-[280px] md:top-[260px] md:left-[730px] left-[115px]">InnovateSpace Event Arena</h1>
+          <h1 className="text-white absolute top-[280px] md:top-[260px] md:left-[270px] lg:left-[730px] left-[115px]">InnovateSpace Event Arena</h1>
         </div>
       </div>
 
@@ -29,7 +29,7 @@ const Speakers = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 md:w-[800px] mx-auto mt-[100px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:w-[760px] lg:w-[800px] mx-auto mt-[100px]">
         <div className="text-white ">
           <img className="w-[250px] h-[240px] rounded-3xl ml-[87px] md:ml-0" src="https://i.ibb.co/C9ZFhyx/6.jpg" alt="" />
           <div className="text-center  my-4">

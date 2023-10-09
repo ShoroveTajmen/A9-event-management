@@ -9,10 +9,10 @@ const BuyTicket = () => {
         {/* white overlay */}
         <div className="absolute top-0 right-0 bottom-0 left-0 bg-black opacity-60 "></div>
         <div className="relative">
-          <h1 className="absolute text-white md:top-[150px] top-[170px] md:left-[550px] font-bold md:text-5xl text-4xl ml-2 md:ml-0">
+          <h1 className="absolute text-white md:top-[150px] top-[170px] md:left-[170px] lg:left-[550px] font-bold md:text-4xl lg:text-5xl text-4xl ml-2 md:ml-0">
             BUY YOUR EVENT TICKET
           </h1>
-          <h1 className="text-white absolute top-[230px] md:top-[210px] md:left-[690px] left-[115px]">InnovateSpace Event Arena</h1>
+          <h1 className="text-white absolute top-[230px] md:top-[210px] md:left-[280px] lg:left-[690px] left-[115px]">InnovateSpace Event Arena</h1>
         </div>
       </div>
 
@@ -25,10 +25,10 @@ const BuyTicket = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-6 grid-cols-1 gap-5 text-white w-[300px] md:w-[900px] mx-auto text-center mt-10">
+      <div className="grid md:grid-cols-6 grid-cols-1 gap-5 text-white w-[300px] md:w-[700px] lg:w-[900px] mx-auto text-center mt-10">
         <div className="col-span-2 mb-12 md:mb-0">
           <h1>
-            <FaWpforms className="w-[50px] h-[50px] text-blue-500 ml-[120px] md:ml-[110px]"></FaWpforms>
+            <FaWpforms className="w-[50px] h-[50px] text-blue-500 ml-[120px] md:ml-[90px] lg:ml-[110px]"></FaWpforms>
           </h1>
           <h1 className="text-2xl font-bold mt-5 mb-3">Submit The Form</h1>
           <p>
@@ -39,7 +39,7 @@ const BuyTicket = () => {
         </div>
         <div className="col-span-2 mb-12 md:mb-0">
           <h1>
-            <RiTicket2Fill className="w-[50px] h-[50px] text-blue-500 ml-[125px] md:ml-[110px]"></RiTicket2Fill>
+            <RiTicket2Fill className="w-[50px] h-[50px] text-blue-500 ml-[125px] md:ml-[90px] lg:ml-[110px]"></RiTicket2Fill>
           </h1>
           <h1 className="text-2xl font-bold mt-5 mb-3">Payment</h1>
           <p>
@@ -48,7 +48,7 @@ const BuyTicket = () => {
         </div>
         <div className="col-span-2 mb-12 md:mb-0">
           <h1>
-            <RiTicket2Line className="w-[50px] h-[50px] text-blue-500 ml-[120px] md:ml-[110px]"></RiTicket2Line>
+            <RiTicket2Line className="w-[50px] h-[50px] text-blue-500 ml-[120px] md:ml-[90px] lg:ml-[110px]"></RiTicket2Line>
           </h1>
           <h1 className="text-2xl font-bold mt-5 mb-3">Get Your Ticket</h1>
           <p>
@@ -56,7 +56,7 @@ const BuyTicket = () => {
           </p>
         </div>
       </div>
-      <div className="ml-[135px] md:ml-[700px] mt-5 ">
+      <div className="ml-[135px] md:ml-[300px] lg:ml-[700px] mt-5 ">
         <button className="btn btn-primary font-bold">GET TICKET NOW!</button>
       </div>
     </div>

@@ -57,7 +57,7 @@ const Navbar = () => {
             </li>
           </div>
 
-          <div className="flex  md:w-[700px] font-bold text-lg flex-col md:flex-row md:justify-end  md:items-center ">
+          <div className="flex  lg:w-[700px] font-bold text-lg flex-col md:flex-row md:justify-end  md:items-center ">
             {/* Register */}
 
             <div className="mb-3 md:mb-0 ml-[170px] md:ml-0" >

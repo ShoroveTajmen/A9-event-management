@@ -1,6 +1,6 @@
 const Faq = () => {
   return (
-    <div className="p-5">
+    <div className="p-5 h-[900px] md:h-[800px] mb-[1px]">
       <div className=" mt-16 p-5">
         <h1 className="text-white flex justify-center items-center font-bold">FAQs</h1>
         <h1 className="text-4xl md:text-5xl font-bold text-blue-700 flex justify-center items-center text-center">
@@ -10,7 +10,7 @@ const Faq = () => {
           <hr className="w-[280px]  border-4 rounded" />
         </div>
       </div>
-      <div className="text-white w-[350px] md:w-[900px] mx-auto">
+      <div className="text-white w-[350px] md:w-[500px] lg:w-[900px] mx-auto">
         <div className="join join-vertical w-full">
           <div className="collapse collapse-arrow join-item border border-base-300">
             <input type="radio" name="my-accordion-4" checked="checked" />
